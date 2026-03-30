@@ -40,12 +40,11 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   width: 200px;
+  min-height: 320px;  
   padding: 10px;
   border-radius: 25px;
-  transition: 0.3s;
 }
 
 .card:hover {
@@ -79,6 +78,7 @@ img {
   color: orange;
   padding: 10px 20px;
   cursor: pointer;
+  margin-top:auto;
 }
 
 .card button:hover {
