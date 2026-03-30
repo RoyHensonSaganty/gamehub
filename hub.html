@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hub.css">
+</head>
+
+<body class="hub">
+
+<header>
+    <div id="main">Game Hub</div>
+
+    <nav>
+        <span id="welcome"></span>
+        <button class="h" id="loginBtn" onclick="openLogin()">Login</button>
+        <button class="h" id="logoutBtn" onclick="logout()" style="display:none;">Logout</button>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Play Fun Mini Games 🎮</h1>
+    <p>Simon Game, Drum Kit & more coming soon...</p>
+</div>
+
+<div class="pic">
+    <div class="card simon">
+        <img src="s.png">
+        <h1>Simon Game</h1>
+        <button onclick="openSimon()">Play</button>
+    </div>
+    
+    <div class="card drum">
+        <img src="dk.png">
+        <h1>Drum Kit</h1>
+        <button onclick="openDrum()">Play</button>
+    </div>
+
+    <div class="card simon">
+        <img src="mem.jpeg">
+        <h1>Memory</h1>
+        <button disabled>Coming Soon</button>
+    </div>
+
+    <div class="card drum">
+        <img src="tic.png">
+        <h1>Tic Tac Toe</h1>
+        <button disabled>Coming Soon</button>
+    </div>
+</div>
+
+<div id="l" class="lf">
+    <h1>Login</h1>
+    <input type="text" id="u" placeholder="Username">
+    <input type="password" id="p" placeholder="Password">
+    <button class="h" onclick="submitLogin()">Submit</button>
+</div>
+
+<script src="hub.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+.hub {
+  background: linear-gradient(135deg, #0a0f2c, #1a2a6c, #1d0c44, #0a0f2c);
+}
+
+.hub header {
+  margin: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Audiowide', sans-serif;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #da0a98, 0 0 20px #da0a98;
+}
+.h{
+  box-shadow: 0 0 10px #da0a98, 0 0 20px #da0a98;
+  color: #da0a98;
+  border: none;
+  border-radius: 15px;
+}
+#main:hover, .h:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  height: 70vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 320px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.simon {
+  background-color: #15706c;
+  box-shadow: 0 0 10px #1dc383, 0 0 20px #1dc383;
+}
+
+.drum {
+  background-color: #7d0c59;
+  box-shadow: 0 0 10px #da0a98, 0 0 20px #da0a98;
+}
+
+.card,h1 {
+  color: white;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+.card button {
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 10px #e5a226, 0 0 20px #e5a226;
+  background-color: white;
+  color: orange;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  box-shadow: 0 0 10px #da0a98, 0 0 20px #da0a98;
+  color: #da0a98;
+}
+
+.lf {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0a0f2c;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 0 15px #00ffd5;
+  display: none;
+}
+
+.lf.active {
+  display: block;
+}
+
+.lf input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+.hero {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.hero p {
+  color: #ccc;
+}
+
+#welcome {
+  margin-right: 15px;
+  color: #00ffd5;
+}
+
+@media (max-width: 768px) {
+
+  .hub header {
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px;
+    text-align: center;
+  }
+
+  #main {
+    font-size: 22px;
+  }
+
+  .pic {
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .card {
+    width: 80%;
+    height: auto;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hub header {
+    padding: 10px;
+  }
+
+  #main {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .card h1 {
+    font-size: 18px;
+  }
+
+  .card button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 12px;
+  }
+}
