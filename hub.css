@@ -121,70 +121,37 @@ img {
 
   .hub header {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     margin: 15px;
+    padding: 20px;
     text-align: center;
   }
 
-  #main {
-    font-size: 22px;
-  }
-
   .pic {
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: column; 
+    gap: 40px;  
     height: auto;
-    padding: 20px 0;
+    padding: 40px 0;
+    align-items: center;
   }
 
   .card {
-    width: 80%;
-    height: auto;
+    width: 250px;  
+    height: auto;       
+    min-height: 350px;   
   }
 
   img {
-    width: 100%;
-    height: auto;
+    width: 180px;      
+    height: 180px;
   }
 
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .hero p {
-    font-size: 14px;
+  .hero {
+    padding: 0 20px;    
   }
 }
-
-@media (max-width: 480px) {
-
-  .hub header {
-    padding: 10px;
-  }
-
-  #main {
-    font-size: 18px;
-  }
-
+@media (max-width: 400px) {
   .card {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .card h1 {
-    font-size: 18px;
-  }
-
-  .card button {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .hero h1 {
-    font-size: 20px;
-  }
-
-  .hero p {
-    font-size: 12px;
+    width: 90%;       
   }
 }
