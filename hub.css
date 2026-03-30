@@ -1,6 +1,5 @@
 .hub {
   background: linear-gradient(135deg, #0a0f2c, #1a2a6c, #1d0c44, #0a0f2c);
-  overflow-x: hidden; 
 }
 
 .hub header {
@@ -14,14 +13,12 @@
   border-radius: 25px;
   box-shadow: 0 0 10px #da0a98, 0 0 20px #da0a98;
 }
-
-.h {
+.h{
   box-shadow: 0 0 10px #da0a98, 0 0 20px #da0a98;
   color: #da0a98;
   border: none;
   border-radius: 15px;
 }
-
 #main:hover, .h:hover {
   color: orange;
   cursor: pointer;
@@ -31,24 +28,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;    
-  padding: 30px;
-  height: auto;        
+  gap: 80px;
+  height: 70vh;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   width: 200px;
-  min-height: 320px;  
+  height: 320px;
   padding: 10px;
   border-radius: 25px;
-}
-
-.card:hover {
-  transform: translateY(-8px) scale(1.05);
 }
 
 .simon {
@@ -61,13 +53,13 @@
   box-shadow: 0 0 10px #da0a98, 0 0 20px #da0a98;
 }
 
-.card, h1 {
+.card,h1 {
   color: white;
 }
 
 img {
-  width: 100%;
-  border-radius: 15px;
+  height: 200px;
+  width: 200px;
 }
 
 .card button {
@@ -78,7 +70,6 @@ img {
   color: orange;
   padding: 10px 20px;
   cursor: pointer;
-  margin-top:auto;
 }
 
 .card button:hover {
@@ -126,7 +117,7 @@ img {
   color: #00ffd5;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   .hub header {
     flex-direction: column;
@@ -135,14 +126,20 @@ img {
     text-align: center;
   }
 
+  #main {
+    font-size: 22px;
+  }
+
   .pic {
     flex-direction: column;
-    gap: 25px;
-    padding: 20px;
+    gap: 30px;
+    height: auto;
+    padding: 20px 0;
   }
 
   .card {
-    width: 85%;
+    width: 80%;
+    height: auto;
   }
 
   img {
@@ -151,7 +148,7 @@ img {
   }
 
   .hero h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .hero p {
@@ -161,12 +158,16 @@ img {
 
 @media (max-width: 480px) {
 
+  .hub header {
+    padding: 10px;
+  }
+
   #main {
     font-size: 18px;
   }
 
   .card {
-    width: 95%;
+    width: 90%;
     padding: 15px;
   }
 
@@ -175,12 +176,12 @@ img {
   }
 
   .card button {
-    width: 100%;
+    padding: 8px 16px;
     font-size: 14px;
   }
 
   .hero h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .hero p {
