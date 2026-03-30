@@ -1,5 +1,6 @@
 .hub {
   background: linear-gradient(135deg, #0a0f2c, #1a2a6c, #1d0c44, #0a0f2c);
+  overflow-x: hidden; 
 }
 
 .hub header {
@@ -13,12 +14,14 @@
   border-radius: 25px;
   box-shadow: 0 0 10px #da0a98, 0 0 20px #da0a98;
 }
-.h{
+
+.h {
   box-shadow: 0 0 10px #da0a98, 0 0 20px #da0a98;
   color: #da0a98;
   border: none;
   border-radius: 15px;
 }
+
 #main:hover, .h:hover {
   color: orange;
   cursor: pointer;
@@ -28,8 +31,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
-  height: 70vh;
+  gap: 40px;
+  flex-wrap: wrap;    
+  padding: 30px;
+  height: auto;        
 }
 
 .card {
@@ -38,9 +43,13 @@
   align-items: center;
   justify-content: space-between;
   width: 200px;
-  height: 320px;
   padding: 10px;
   border-radius: 25px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
 }
 
 .simon {
@@ -53,13 +62,13 @@
   box-shadow: 0 0 10px #da0a98, 0 0 20px #da0a98;
 }
 
-.card,h1 {
+.card, h1 {
   color: white;
 }
 
 img {
-  height: 200px;
-  width: 200px;
+  width: 100%;
+  border-radius: 15px;
 }
 
 .card button {
@@ -119,35 +128,26 @@ img {
 
 @media (max-width: 768px) {
 
-  body {
-    padding: 0;
-  }
-
   .hub header {
     flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    margin: 15px;
-    padding: 12px;
-  }
-
-  #main {
-    font-size: 22px;
-  }
-
-  nav {
-    display: flex;
     gap: 10px;
-  }
-
-  #welcome {
-    display: block;
-    margin: 5px 0;
+    margin: 15px;
     text-align: center;
   }
 
-  .hero {
-    padding: 10px;
+  .pic {
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+  }
+
+  .card {
+    width: 85%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
   }
 
   .hero h1 {
@@ -157,39 +157,6 @@ img {
   .hero p {
     font-size: 14px;
   }
-
-  .pic {
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    height: auto;
-    padding: 20px 10px;
-  }
-
-  .card {
-    width: 85%;
-    height: auto;
-    padding: 15px;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-  }
-
-  .card h1 {
-    font-size: 18px;
-  }
-
-  .card button {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .lf {
-    width: 90%;
-  }
 }
 
 @media (max-width: 480px) {
@@ -198,33 +165,25 @@ img {
     font-size: 18px;
   }
 
+  .card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .card h1 {
+    font-size: 18px;
+  }
+
+  .card button {
+    width: 100%;
+    font-size: 14px;
+  }
+
   .hero h1 {
     font-size: 18px;
   }
 
   .hero p {
     font-size: 12px;
-  }
-
-  .card {
-    width: 95%;
-  }
-
-  .card h1 {
-    font-size: 16px;
-  }
-
-  .card button {
-    font-size: 13px;
-    padding: 8px;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .h {
-    width: 100%;
   }
 }
